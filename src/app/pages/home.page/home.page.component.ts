@@ -19,7 +19,7 @@ export class HomePageComponent implements OnInit {
     getParam: HashParams = getParam;
     isAccess = true;
     isReadonly = true;
-    isDarkMode = false;
+    isDarkMode = true;
     isDocsShows = false;
     dbItems: any[] = [];
     isLeftPanel = true;
