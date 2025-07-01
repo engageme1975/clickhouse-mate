@@ -8,7 +8,7 @@ import { GetParamsService } from './services/get-params.service';
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
-    title = 'ClickHousePlay';
+    title = 'Unify AI';
 
     constructor(private getParamsService: GetParamsService) {
     }

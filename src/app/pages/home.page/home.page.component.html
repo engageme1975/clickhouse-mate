@@ -1,14 +1,20 @@
-<mat-toolbar color="primary" class="ukranian-bg" *ngIf="!getParam.kiosk">
+<mat-toolbar color="primary" class="unify-ai-bg" *ngIf="!getParam.kiosk">
     <button
         mat-icon-button
         class="example-icon"
         (click)="isLeftPanel = !isLeftPanel"
+        matTooltip="Toggle sidebar"
     >
         <mat-icon>menu</mat-icon>
     </button>
-    <span style="font-size: 20px !important">ClickHouse</span>
+    
+    <div class="logo-container">
+        <img src="assets/image/unify-ai.png" alt="Unify AI Logo" />
+        <span class="brand-text">Unify AI</span>
+    </div>
+    
     <span
-        style="margin-left: 1rem; margin-bottom: -15px"
+        style="margin-left: auto; margin-right: 1rem; margin-bottom: -8px"
         *ngIf="dbItems && dbItems.length > 1"
     >
         <mat-form-field appearance="outline">
